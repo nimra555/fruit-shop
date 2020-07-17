@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: red;
+    font-size: 40px;
+    text-shadow: 15px 15px 15px red;
+    margin-bottom: 10px;
+}
+ input{
+    margin-top:20px;
+    padding: 5px;
+    border: none;
+    border: 1px solid red;
+    color: green;
+    border-radius: 5px;
+    margin-bottom:20px;
+
+}
+#input-butn{
+    background-color: rgb(67, 194, 67);
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 15px;
+}
+#input-butn:hover{
+    cursor: pointer;
+    color: rgb(67, 194, 67);
+    background-color: red;
+}
+#input-item{
+    font-weight: 700; 
+    margin-top: 10px; 
+} 
+.apple-content{
+    border: 1px solid white;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 10px wheat;
+    border-radius: 10px;
+    margin: 10px;
+}
+.banana-content{
+    border: 1px solid white;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 10px wheat;
+    border-radius: 10px;
+    margin: 10px;
+}
+.mango-content{
+    border: 1px solid white;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 10px wheat;
+    border-radius: 10px;
+    margin: 10px;
+}
+.add{
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 2px;
+}
+.minus{
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 2px;
+}
+.balance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+@media screen and (max-width :768px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

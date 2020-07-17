@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fruits.jpg" type="image/jpg">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fruit Shop</h1>
+        <input type="number" placeholder="enter price">
+        <button id="input-butn" onclick="userInput()">Add price</button>
+        <p id="input-item"></p>
+    </div>
+    <div class="flex-container">
+        <div class="apple-content">
+            <strong>Price of Apple = 10</strong>
+            <img src="apple.jpg" alt="apple">
+            <button onclick="addInputApple()" class="add">+</button>
+            <span id="num1">0</span>
+            <button onclick="SubtractInputApple()" class="minus">-</button>
+        </div>
+        <div class="banana-content">
+            <strong class="banana-strong">Price of Banana = 12</strong>
+            <img src="banana.jpg" alt="banana" id="banana-img">
+            <button onclick="addInputBanana()" class="add">+</button>
+            <span id="num2">0</span>
+            <button onclick="SubtractInputBanana()" class="minus">-</button>
+        </div> 
+        <div class="mango-content">
+            <strong>Price of Mango = 15</strong>
+            <img src="mango.jpg" alt="mango">
+            <button onclick="addInputMango()" class="add">+</button>
+            <span id="num3">0</span>
+            <button onclick="SubtractInputMango()" class="minus">-</button>
+        </div>
+    </div>
+    <div class="balance">
+        <p id="total"></p>
+        <p id="balance"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
