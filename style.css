@@ -14,44 +14,51 @@
     align-items: center;
     flex-direction: column;
 }
-h1{
-    color: red;
-    font-size: 40px;
-    text-shadow: 15px 15px 15px red;
-    margin-bottom: 10px;
-}
- input{
+input{
     margin-top:20px;
-    padding: 5px;
+    padding: 10px 25px;
     border: none;
-    border: 1px solid red;
-    color: green;
+    border: 1px solid #009688;
+    border-width: 5px;
+    color: #FFC107;
+    font-weight: 900;
     border-radius: 5px;
     margin-bottom:20px;
-
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
 }
 #input-butn{
-    background-color: rgb(67, 194, 67);
-    color: red;
-    border: 1px solid red;
+    background-color: #FFC107;
+    color: #009688;
+    border: 1px solid #FF9800;
     border-radius: 5px;
     padding: 15px;
+    font-weight: 700;
 }
 #input-butn:hover{
     cursor: pointer;
-    color: rgb(67, 194, 67);
-    background-color: red;
+    color: #FFC107;
+    background-color: #009688;
 }
 #input-item{
-    font-weight: 700; 
-    margin-top: 10px; 
+    font-weight: 800; 
+    margin: 10px  0px;
+    font-size: 25px;
+    color: #009688; 
 } 
+.img{
+    height: 220px;
+}
 .apple-content{
     border: 1px solid white;
     padding: 5px;
     box-shadow: 5px 5px 5px 10px wheat;
     border-radius: 10px;
     margin: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
 }
 .banana-content{
     border: 1px solid white;
@@ -59,6 +66,9 @@ h1{
     box-shadow: 5px 5px 5px 10px wheat;
     border-radius: 10px;
     margin: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
 }
 .mango-content{
     border: 1px solid white;
@@ -66,6 +76,9 @@ h1{
     box-shadow: 5px 5px 5px 10px wheat;
     border-radius: 10px;
     margin: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
 }
 .add{
     background-color: transparent;
@@ -87,6 +100,12 @@ h1{
     align-items: center;
     flex-direction: column;
     font-weight: bold;
+}
+.balance{
+    background-color: #009688;
+    color: #FFC107;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 @media screen and (max-width :768px){
