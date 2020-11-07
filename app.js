@@ -1,4 +1,4 @@
-
+// declared all variables 
 let priceofApple = 10;
 let priceofBanana = 12;
 let priceofMango = 15;
@@ -11,18 +11,20 @@ let bananaTotalcost = 0;
 let mangoTotalcost = 0;
 let fullQuantity = 0;
 
+// func for input field add data 
 function userInput(){
     let inputElement = document.querySelector("input").value;
     console.log(inputElement);
     if(inputElement === ""){
         alert("Enter your budget");
     }
-    
+    // show input data(price)
     let inputItem = document.querySelector("#input-item");
     inputItem.innerHTML = "Your Price: " +  inputElement;
 
 }
 
+// func for add apple 
 function addInputApple(){
    let num = document.querySelector("#num1");
    console.log(num);
@@ -34,6 +36,7 @@ function addInputApple(){
     totalQuantity();
 }
 
+// func for subtract apple 
 function SubtractInputApple(){
     
     let num = document.querySelector("#num1");
@@ -49,7 +52,7 @@ function SubtractInputApple(){
     } 
 }
 
-
+// func for add banana
 function addInputBanana(){
     let num2 = document.querySelector("#num2");
     console.log(num2);
@@ -61,6 +64,7 @@ function addInputBanana(){
      totalQuantity();
  }
   
+// func for subtract banana 
 function SubtractInputBanana(){
      
     let num2 = document.querySelector("#num2");
@@ -76,7 +80,7 @@ function SubtractInputBanana(){
     } 
 }
 
-
+// func for add mango
  function addInputMango(){
     let num3 = document.querySelector("#num3");
     console.log(num3);
@@ -88,7 +92,7 @@ function SubtractInputBanana(){
      totalQuantity();  
  }
 
-
+// func for subtract mango
  function SubtractInputMango(){
      
      let num3 = document.querySelector("#num3");
@@ -103,7 +107,7 @@ function SubtractInputBanana(){
          alert("quantity is zero");
      } 
  }
- 
+//  func for total amount 
  function totalElement(){ 
    let totalNumber = document.querySelector("#total");
    console.log(totalNumber);
@@ -123,6 +127,7 @@ function SubtractInputBanana(){
     }
 }
 
+//  func for balance amount 
 function balanceAmount(){
     let inputElement =  document.querySelector("input").value;
    let balance = document.querySelector("#balance");
@@ -130,6 +135,7 @@ function balanceAmount(){
    console.log(balance);
 }
 
+//  func for total quantity
 function totalQuantity(){
     let  tQuantity = document.querySelector('#total-quantity');
 

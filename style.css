@@ -1,19 +1,23 @@
+/* apply all styles */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* flex-container style  */
 .flex-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* main container style  */
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+/* input style  */
 input{
     margin-top:20px;
     padding: 10px 25px;
@@ -28,6 +32,7 @@ input{
     text-align: center;
     font-size: 20px;
 }
+/* input button style  */
 #input-butn{
     background-color: #FFC107;
     color: #009688;
@@ -36,20 +41,24 @@ input{
     padding: 15px;
     font-weight: 700;
 }
+/* input button hover style  */
 #input-butn:hover{
     cursor: pointer;
     color: #FFC107;
     background-color: #009688;
 }
+/* input data style  */
 #input-item{
     font-weight: 800; 
     margin: 10px  0px;
     font-size: 25px;
     color: #009688; 
 } 
+/* set image height */
 .img{
     height: 220px;
 }
+/* style applecontent  */
 .apple-content{
     border: 1px solid white;
     padding: 5px;
@@ -60,6 +69,7 @@ input{
     height: 300px;
     text-align: center;
 }
+/* style banana content  */
 .banana-content{
     border: 1px solid white;
     padding: 5px;
@@ -70,6 +80,7 @@ input{
     height: 300px;
     text-align: center;
 }
+/* style mango content  */
 .mango-content{
     border: 1px solid white;
     padding: 5px;
@@ -80,6 +91,7 @@ input{
     height: 300px;
     text-align: center;
 }
+/* style add button  */
 .add{
     background-color: transparent;
     border-radius: 100%;
@@ -87,6 +99,7 @@ input{
     font-weight: bold;
     padding: 2px;
 }
+/* style minus button  */
 .minus{
     background-color: transparent;
     border-radius: 100%;
@@ -94,20 +107,22 @@ input{
     font-weight: bold;
     padding: 2px;
 }
-.balance{
+/* style balance-container */
+.balance-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-weight: bold;
 }
+/* style balance data */
 .balance{
     background-color: #009688;
     color: #FFC107;
     font-weight: bold;
     font-size: 25px;
 }
-
+/* apply media query */
 @media screen and (max-width :768px){
     .flex-container{
         display: flex;

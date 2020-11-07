@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Shop</title>
+    <!-- style link  -->
     <link rel="stylesheet" href="style.css">
+    <!-- icon link  -->
     <link rel="shortcut icon" href="fruits.jpg" type="image/jpg">
 </head>
 
 <body>
+     <!-- in this section image and input field  -->
     <div class="container">
+        <!-- img of fruitshop -->
         <img src="fruitshop.jpg" alt="fruitshop">
+        <!-- input field   -->
         <input type="number" placeholder="enter your price">
+        <!-- button for add price  -->
         <button id="input-butn" onclick="userInput()">Add price</button>
+        <!-- input price data through js  -->
         <p id="input-item"></p>
     </div>
+    <!-- in this section apple,banana and mango content -->
     <div class="flex-container">
+        <!-- content of apple  -->
         <div class="apple-content">
             <strong>Price of Apple = 10</strong>
             <img src="apple.jpg" alt="apple" class="img"> <br>
@@ -24,6 +33,7 @@
             <span id="num1">0</span>
             <button onclick="SubtractInputApple()" class="minus">-</button>
         </div>
+        <!-- content of banana  -->
         <div class="banana-content">
             <strong class="banana-strong">Price of Banana = 12</strong>
             <img src="banana.jpg" alt="banana" class="img" id="banana-img" width="220px"> <br>
@@ -31,6 +41,7 @@
             <span id="num2">0</span>
             <button onclick="SubtractInputBanana()" class="minus">-</button>
         </div> 
+        <!-- content of mango  -->
         <div class="mango-content">
             <strong>Price of Mango = 15</strong>
             <img src="mango.jpg" alt="mango" class="img"> <br>
@@ -39,12 +50,16 @@
             <button onclick="SubtractInputMango()" class="minus">-</button>
         </div>
     </div>
+    <!-- end of this content  -->
     <br>
-    <div class="balance">
+    <!-- start balance section (total,balance,total-quantity) -->
+    <div class="balance-container">
         <p id="total"></p>
         <p id="balance"></p>
         <p id="total-quantity"></p>
     </div>
+    <!-- end of balance  -->
+    <!-- javascript link  -->
     <script src="app.js"></script>
 </body>
 
